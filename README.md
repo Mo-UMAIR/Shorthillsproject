@@ -69,4 +69,28 @@ leetcode_contest_helper/
 ```
 ---
 
+## 📦 Assignment Requirements Compliance
+
+| Requirement | Status |
+|-------------|--------|
+| Google ADK Framework | ✅ Used |
+| Stable Gemini Model | ✅ gemini-1.5-flash |
+| Root Agent | ✅ Implemented |
+| Minimum 3 Sub-Agents | ✅ 4 Sub-Agents |
+| google_search Tool | ✅ Integrated |
+| 3+ Custom Tools | ✅ Implemented |
+| problem_statement.md | ✅ Included |
+| CLI / Web Execution | ✅ Supported |
+
+---
+
+## 🏗 Design Approach
+
+The system is designed with modularity and scalability in mind. Each agent has a clearly defined responsibility, ensuring clean separation of concerns. The Root Agent manages workflow, while sub-agents focus on specialized tasks such as analysis, research, and reporting. Custom tools provide structured data handling, and the built-in `google_search` tool enhances real-world capability. The sequential execution pattern ensures controlled orchestration and predictable behavior.
+
+---
+
+## 🧾 Brief Architecture Explanation (Submission Version)
+
+This project implements a multi-agent architecture using Google ADK to analyze LeetCode contest problems and generate structured learning insights. A Root Agent orchestrates four specialized sub-agents responsible for fetching problems, analyzing difficulty and patterns, researching tutorials using the mandatory `google_search` tool, and generating a markdown summary report. Custom tools were implemented for data retrieval, metadata extraction, and report generation. The system follows a sequential execution pattern to ensure clear workflow management and modular responsibility separation. This design demonstrates agent orchestration, tool integration, and real-world task automation while strictly adhering to Google ADK requirements.
 
