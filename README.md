@@ -69,3 +69,51 @@ leetcode_contest_helper/
 
 
 
+
+---
+
+## 📦 Assignment Requirements Compliance
+
+| Requirement | Status |
+| :--- | :--- |
+| **Google ADK Framework** | ✅ Used |
+| **Stable Gemini Model** | ✅ `gemini-1.5-flash` |
+| **Root Agent** | ✅ Implemented |
+| **Minimum 3 Sub-Agents** | ✅ 4 Sub-Agents |
+| **google_search Tool** | ✅ Integrated |
+| **3+ Custom Tools** | ✅ Implemented |
+| **problem_statement.md** | ✅ Included |
+| **CLI / Web Execution** | ✅ Supported |
+
+---
+
+## 🏗 Design Approach
+The system is designed with **modularity and scalability** in mind. Each agent has a clearly defined responsibility, ensuring a clean **separation of concerns**. 
+
+* **Orchestration:** The Root Agent manages the high-level workflow.
+* **Specialization:** Sub-agents focus on granular tasks (analysis, research, reporting).
+* **Extensibility:** Custom tools provide structured data handling, while the built-in `Google Search` tool adds real-world research capabilities.
+* **Reliability:** A sequential execution pattern ensures controlled orchestration and predictable behavior throughout the pipeline.
+
+---
+
+## 🧾 Brief Architecture Explanation (Submission Version)
+This project implements a multi-agent architecture using **Google ADK** to analyze LeetCode contest problems and generate structured learning insights. 
+
+A **Root Agent** orchestrates four specialized sub-agents responsible for fetching problems, analyzing difficulty and patterns, researching tutorials via the mandatory `Google Search` tool, and generating a markdown summary report. Custom tools were implemented for data retrieval, metadata extraction, and report generation. The system follows a sequential execution pattern to ensure clear workflow management and modular responsibility separation. This design demonstrates effective agent orchestration and real-world task automation while adhering strictly to Google ADK requirements.
+
+
+
+---
+
+## 🚀 Future Improvements
+* **Real-time LeetCode API integration:** Moving away from static data to live scraping.
+* **Parallel Agent Execution:** Speeding up the workflow by running research and analysis tasks simultaneously.
+* **Memory-based Learning Recommendations:** Using historical data to suggest specific problems to the user.
+* **Difficulty Trend Analysis:** Visualizing how contest difficulty fluctuates over time.
+* **Personalized Study Plans:** Generating custom roadmaps based on the user's weak topics identified in contests.
+
+---
+
+## 👨‍💻 Author
+Built using **Google ADK** for advanced multi-agent system development.
